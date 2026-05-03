@@ -46,7 +46,7 @@
       Male: MaleReptilian
       Female: FemaleReptilian
       Unsexed: MaleReptilian
-      Futanari: FemaleReptilian # Lust-edit
+      Futanari: FemaleReptilian # Lust-Edit
   - type: BodyEmotes
     soundsId: ReptilianBodyEmotes
   - type: Damageable
@@ -165,7 +165,6 @@
     - "footprint-left-bare-lizard"
     rightBareFootState:
     - "footprint-right-bare-lizard"
-  - type: Carriable
 #Sunrise-end
 
 

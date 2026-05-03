@@ -57,7 +57,7 @@
       Male: UnisexMoth
       Female: UnisexMoth
       Unsexed: UnisexMoth
-      Futanari: UnisexMoth # Lust-edit
+      Futanari: UnisexMoth # Lust-Edit
   - type: MovementSpeedModifier
     baseWeightlessAcceleration: 1.5 # Move around more easily in space.
     baseWeightlessFriction: 1
@@ -202,7 +202,6 @@
             sprite: Mobs/Species/Moth/displacement.rsi
             state: shoes
   - type: FootprintEmitter
-  - type: Carriable
   # Sunrise edit end 0_0
 
 - type: entity

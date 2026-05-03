@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   save: false
   parent: [BaseMobSpeciesOrganic]
@@ -33,6 +33,7 @@
       Male: MaleVulpkanin
       Female: FemaleVulpkanin
       Unsexed: MaleVulpkanin
+      Futanari: FemaleVulpkanin # Lust-Edit
   - type: Damageable
     damageModifierSet: Vulpkanin
   - type: MeleeWeapon
@@ -143,7 +144,6 @@
             sprite: Mobs/Species/Vulpkanin/displacement.rsi
             state: hair
   # Sunrise-start
-  - type: Carriable
   - type: FootprintEmitter
   # Sunrise-end
   - type: Inventory

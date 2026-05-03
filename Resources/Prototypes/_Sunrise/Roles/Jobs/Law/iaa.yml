@@ -15,6 +15,8 @@
   supervisors: job-supervisors-magistrate
   canBeAntag: false
   displayWeight: 40
+  alternativeTitles:
+  - job-alt-title-inspector
   access:
   - Command
   - Service
@@ -29,8 +31,8 @@
 - type: startingGear
   id: IAAGear
   equipment:
-    shoes: ClothingShoesBootsLaceup # Lust - edit
-    id: IAAPDA
+    shoes: ClothingShoesBootsLaceup # Lust-Edit
+    id: IAAPDAQillu # Lust-Edit
     eyes: ClothingEyesGlassesSunglasses
     ears: ClothingHeadsetIAA
     pocket2: HyperLinkBookCorporateLaw
