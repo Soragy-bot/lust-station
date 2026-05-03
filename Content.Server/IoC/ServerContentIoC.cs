@@ -95,7 +95,6 @@ internal static class ServerContentIoC
         deps.Register<PlayerCacheManager>();
         deps.Register<TTSManager>();
         deps.Register<NetTexturesManager>();
-        deps.Register<IIPBlockingSystem, IPBlockingSystem>();
         SunriseServerContentIoC.Register(deps);
         // Sunrise-End
     }
