@@ -9,12 +9,14 @@ using Content.Sunrise.Interfaces.Server;
 using Content.Sunrise.Interfaces.Shared;
 using SunrisePrivate.Content.Server.Ani;
 #endif
+using Content.Shared._Sunrise.Sponsors;
+using Content.Sunrise.Interfaces.Shared;
 
 namespace Content.Server._Sunrise.IoC;
 
 internal static class SunriseServerContentIoC
 {
-    public static void Register()
+    public static void Register(IDependencyCollection deps)
     {
 #if SUNRISE_PRIVATE
         IoCManager.Register<ISharedSponsorsManager, ServerSponsorsManager>();
@@ -24,5 +26,6 @@ internal static class SunriseServerContentIoC
         IoCManager.Register<ITrustedProxyService, TrustedProxyService>();
         IoCManager.Register<IIPBlockingSystem, IPBlockingSystem>();
 #endif
+        deps.Register<ISharedSponsorsManager, MockSponsorsManager>();
     }
 }

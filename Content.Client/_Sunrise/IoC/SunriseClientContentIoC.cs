@@ -5,12 +5,14 @@ using Content.Client._SunrisePrivate.Sponsors;
 using Content.Sunrise.Interfaces.Client;
 using Content.Sunrise.Interfaces.Shared;
 #endif
+using Content.Shared._Sunrise.Sponsors;
+using Content.Sunrise.Interfaces.Shared;
 
 namespace Content.Client._Sunrise.IoC;
 
 internal static class SunriseClientContentIoC
 {
-    public static void Register()
+    public static void Register(IDependencyCollection deps)
     {
 #if SUNRISE_PRIVATE
         var collection = IoCManager.Instance!;
@@ -19,5 +21,6 @@ internal static class SunriseClientContentIoC
         collection.Register<IClientServiceAuthManager, ClientServiceAuthManager>();
         collection.Register<IClientServiceCheckMemberManager, ClientServiceCheckMemberManager>();
 #endif
+        deps.Register<ISharedSponsorsManager, MockSponsorsManager>();
     }
 }
